@@ -40,8 +40,13 @@ class Puzzle {
 		this.x = x;
 		this.y = y;
 		for (var i = 0; i < this.blocks.length; i++) {
-			this.blocks[i].setPosition(dx+this.blocks[i].x, dy+this.blocks[i].y);
+			this.blocks[i].x = dx+this.blocks[i].x;
+			this.blocks[i].y = dy+this.blocks[i].y;
 		}
+	}
+
+	rotate90Degree(rx,ry) {
+		//
 	}
 }
 

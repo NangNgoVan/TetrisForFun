@@ -6,8 +6,9 @@ const Config = {
 	type: Phaser.AUTO,
     width: Env['WINDOW_WIDTH'],
     height: Env['WINDOW_HEIGHT'],
-    backgroundColor: '#000000',
-    scene: null
+    backgroundColor: '#E0E0E0',
+    scene: null,
+    parent: document.getElementById("main")
 }
 
 const Tetris = new Phaser.Game(Config);
